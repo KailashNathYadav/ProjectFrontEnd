@@ -1,0 +1,39 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+    margin:0;
+}
+
+:root{
+    --boardSize: 300px;
+}
+
+body{
+    background-color: skyblue;
+}
+
+.chessboard{
+    width: var(--boardSize);
+    height: var(--boardSize);
+    background-color: pink; 
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: calc((100vh - var(--boardSize))/2);
+    left: calc((100vw - var(--boardSize))/2);;
+}
+
+.cell{
+    width: calc(var(--boardSize)/8);
+    height: calc(var(--boardSize)/8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.w{
+    background-color: white;
+}
+
+.b{
+    background-color: grey;
+}
