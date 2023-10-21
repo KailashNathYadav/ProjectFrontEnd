@@ -1,0 +1,13 @@
+.outer-box{
+    width: 80vw;
+    height: 80vh;
+    background: red;
+    display: grid;
+    place-items: center;
+}
+
+.inner-box{
+    width: 10%;
+    height: 10%;
+    background: blue;
+}

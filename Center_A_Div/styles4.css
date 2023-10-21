@@ -1,0 +1,23 @@
+:root{
+    --outerBoxSize: 40vw;   
+    --innerBoxSize: 10vw;
+}
+
+.outer-box{
+    width: var(--outerBoxSize);
+    height: var(--outerBoxSize);
+    background: red;
+}
+
+.inner-box{
+    width: var(--innerBoxSize);
+    height: var(--innerBoxSize);
+    background: blue;
+}
+
+.inner-box{
+    position: absolute;
+    left: calc((var(--outerBoxSize) - var(--innerBoxSize))/2);
+    top: calc((var(--outerBoxSize) - var(--innerBoxSize))/2);
+}
+
